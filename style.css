@@ -1,7 +1,8 @@
 p {
   color: black;
   font-family: 'Unna', Georgia, "Times New Roman", serif;
-  font-size: 25px
+  font-size: 1.25rem;
+  line-height: 1rem;
 }
 
 h1 {
@@ -9,6 +10,7 @@ h1 {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-weight: bold;
   text-align: center;
+  font-size: 2rem;
 }
 
 body {
@@ -37,6 +39,7 @@ body {
   background-color: #C3CACF;
   border: 0;
   border-bottom: 4px solid #DCE3E8;
+  font-size: 1.25rem;
 }
 
 #nav a:link, a:visited {
