@@ -1,61 +1,26 @@
-p {
-  color: black;
-  font-family: 'Unna', Georgia, "Times New Roman", serif;
-  font-size: 1.25rem;
-  line-height: 1rem;
+body {
+    font-family: 'Unna', Georgia, "Times New Roman", serif;
 }
 
 h1 {
-  color: #4D5A63;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-  font-weight: bold;
-  text-align: center;
-  font-size: 2rem;
+    font-size: 2em;
+    color: #black;
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
 }
 
-body {
-  background-color: #DCE3E8;
+p {
+    font-size: 1em;
 }
 
-.italic {
-  font-style: italic;
-}
-
-#container {
-  width: 85%;
-  margin: 0 auto 0 auto;
-}
-
-#nav  {
-  list-style-type: none;
-  font-size: 25px;
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+aside ul {
+  list-style: none;
   padding: 0;
 }
 
-#nav li {
-  text-align: center;
-  padding: 0;
-  background-color: #C3CACF;
-  border: 0;
-  border-bottom: 4px solid #DCE3E8;
-  font-size: 1.25rem;
-}
-
-#nav a:link, a:visited {
-  display: block;
-  text-decoration: none;
-  color: #0080ff
-}
-
-#nav a:hover, a:active {
-  text-decoration: none;
-  background-color: #8C9297;
-  color: white;
-}
-
-img {
-  border: none;
+aside li {
+  padding: 3px;
 }
 
 a:link {
@@ -63,6 +28,106 @@ a:link {
   text-decoration: none;
 }
 
+a:link a:visited {
+  color: #0080ff;
+}
+
 a:hover {
   text-decoration: underline;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.navigation {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background: #C3CACF;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-flow: column;
+}
+
+.navigation a {
+  text-align: center;
+  color: #4D5A63;
+  padding: 0;
+  display: block;
+  border: 0;
+  border-bottom: 1px solid #DCE3E8;
+  font-size: 1em;
+}
+
+img {
+  width: 100%
+}
+
+body {
+  background-color: #DCE3E8;
+}
+
+article {
+  background-color: #C3CACF;
+  margin: 5px;
+}
+
+aside {
+  background-color: #C3CACF;
+  margin: 5px;
+}
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+header, article, aside {
+  flex: 1 100%;
+  padding: 10px;
+}
+
+@media (min-width:800px) {
+
+  .navigation {
+    flex-flow: row wrap;
+    justify-content: flex-end;
+  }
+
+  .navigation a {
+    padding: 10px;
+    border: none;
+  }
+
+  .navigation a:hover {
+    text-decoration: none;
+    background-color: #8C9297;
+    color: white;
+  }
+
+  article {
+    flex: 3;
+  }
+
+  aside {
+    flex: 1;
+    order: 1;
+  }
+
+  article {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+  .image {
+    width: 45%;
+    padding: 10px;
+    float: left;
+  }
+
+  .story {
+    width: 45%;
+  }
+
 }
