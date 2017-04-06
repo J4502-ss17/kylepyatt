@@ -88,7 +88,47 @@ header, article, aside {
   padding: 10px;
 }
 
-@media (min-width:800px) {
+.rockpile {
+  display: none;
+}
+
+@media screen and (min-width:600px) {
+
+  .navigation {
+    flex-flow: row wrap;
+    justify-content: flex-end;
+  }
+
+  .navigation a {
+    padding: 10px;
+    border: none;
+  }
+
+  article {
+    display: flex;
+    flex-flow: row wrap;
+
+  }
+
+  .image {
+    width: 45%;
+    padding: 10px;
+    float: left;
+  }
+
+  .story {
+    width: 45%;
+  }
+
+}
+
+@media screen and (min-width:1000px) {
+
+  #container {
+    width: 95%;
+    margin: 0 auto;
+    max-width: 80em;
+  }
 
   .navigation {
     flex-flow: row wrap;
@@ -129,5 +169,20 @@ header, article, aside {
   .story {
     width: 45%;
   }
+
+  p{
+		width: 80%;
+		max-width: 60em;
+	}
+
+  .rockpile {
+    display: block;
+    order: 3;
+    margin: 10px, auto;
+    padding: 5px;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+}
 
 }
