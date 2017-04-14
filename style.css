@@ -10,8 +10,19 @@ h1 {
     text-align: center;
 }
 
+nav a:hover {
+  text-decoration: none;
+}
+
 p {
     font-size: 1em;
+}
+
+.menu-trigger {
+    order: 1;
+    font-size: 1.75em;
+    width: 2em;
+    color: #4D5A63;
 }
 
 aside ul {
@@ -93,6 +104,10 @@ header, article, aside {
 }
 
 @media screen and (min-width:600px) {
+
+  .menu-trigger {
+    display: none;
+  }
 
   .navigation {
     flex-flow: row wrap;
